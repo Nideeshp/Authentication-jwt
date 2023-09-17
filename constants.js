@@ -15,6 +15,8 @@ exports.constants={
     NOT_MODIFIED:304,
     UNUSED:306,
     REQUEST_TIMEOUT:408,
+    CONFLICT:409,
     
+
 
 }
