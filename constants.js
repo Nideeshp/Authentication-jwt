@@ -11,5 +11,6 @@ exports.constants={
     PARTIAL_CONTENT:206,
     ALREADY_REPORTED:208,
     MULTIPLE_CHOICES:300,
+    SEE_OTHER:303
 
 }
