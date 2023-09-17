@@ -10,6 +10,6 @@ exports.constants={
     RESET_CONTENT:205,
     PARTIAL_CONTENT:206,
     ALREADY_REPORTED:208,
-    
+    MULTIPLE_CHOICES:300,
 
 }
