@@ -13,5 +13,6 @@ exports.constants={
     MULTIPLE_CHOICES:300,
     SEE_OTHER:303,
     NOT_MODIFIED:304,
+    UNUSED:306,
 
 }
