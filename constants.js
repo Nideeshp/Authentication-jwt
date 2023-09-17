@@ -9,5 +9,7 @@ exports.constants={
     NO_CONTENT:204,
     RESET_CONTENT:205,
     PARTIAL_CONTENT:206,
+    ALREADY_REPORTED:208,
+    
 
 }
