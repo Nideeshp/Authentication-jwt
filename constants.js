@@ -5,4 +5,5 @@ exports.constants={
     NOT_FOUND:404,
     SERVER_ERROR:500,
     ACCEPTED:202,
+    NON_AUTHORATIVE_INFORMATION:203,
 }
