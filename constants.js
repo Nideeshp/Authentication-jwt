@@ -7,4 +7,6 @@ exports.constants={
     ACCEPTED:202,
     NON_AUTHORATIVE_INFORMATION:203,
     NO_CONTENT:204,
+    RESET_CONTENT:205,
+    
 }
