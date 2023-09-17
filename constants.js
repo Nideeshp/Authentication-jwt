@@ -8,5 +8,6 @@ exports.constants={
     NON_AUTHORATIVE_INFORMATION:203,
     NO_CONTENT:204,
     RESET_CONTENT:205,
-    
+    PARTIAL_CONTENT:206,
+
 }
