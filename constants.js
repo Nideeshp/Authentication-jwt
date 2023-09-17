@@ -14,5 +14,7 @@ exports.constants={
     SEE_OTHER:303,
     NOT_MODIFIED:304,
     UNUSED:306,
+    REQUEST_TIMEOUT:408,
+    
 
 }
