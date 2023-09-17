@@ -1,9 +1,9 @@
 const {constants} =require('../constants')
 
 const errorhandler = (err, req, res, nxt) => {
-  const statusCode = res.statusCode ? res.statusCode : 500;
+  const statuscode = res.statusCode ? res.statusCode : 500;
 
-  switch (statusCode) {
+  switch (statuscode) {
     case constants.NOT_FOUND:
       res.json({
         title: "Not found",
