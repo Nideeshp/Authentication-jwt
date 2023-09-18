@@ -20,6 +20,7 @@ exports.constants={
     GONE:410,
     LENGTH_REQUIRED:411,
     LOCKED:423,
+    TOO_EARLY:425,
 
 
     
