@@ -18,7 +18,8 @@ exports.constants={
     CONFLICT:409,
     TEMPORARY_REDIRECT:307,
     GONE:410,
-    
+    LENGTH_REQUIRED:411,
+
 
     
 
