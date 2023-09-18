@@ -19,6 +19,7 @@ exports.constants={
     TEMPORARY_REDIRECT:307,
     GONE:410,
     LENGTH_REQUIRED:411,
+    LOCKED:423,
 
 
     
