@@ -26,7 +26,10 @@ exports.constants={
     GATEWAY_TIMEOUT:504 ,
     BAD_GATEWAY:502,
     MULTI_STATUS:207,
-    FOUND:302
+    FOUND:302,
+    PROCESSING:102,
+    CONTINUE:100,
+    EARLY_HINTS:103,
 
 
     
