@@ -32,7 +32,9 @@ exports.constants={
     EARLY_HINTS:103,
     IM_USED:226,
     MOVED_PERMANENTLY:301,
-    USE_PROXY:305
+    USE_PROXY:305,
+    INSUFFICENT_SPACE:507,
+
 
 
 
