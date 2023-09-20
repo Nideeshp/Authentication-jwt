@@ -29,7 +29,6 @@ exports.constants={
     FOUND:302,
     PROCESSING:102,
     CONTINUE:100,
-    EARLY_HINTS:103,
 
 
 
