@@ -28,7 +28,6 @@ exports.constants={
     MULTI_STATUS:207,
     FOUND:302,
     PROCESSING:102,
-    CONTINUE:100,
 
 
 
