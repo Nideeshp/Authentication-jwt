@@ -31,7 +31,6 @@ exports.constants={
     CONTINUE:100,
     EARLY_HINTS:103,
     IM_USED:226,
-    MOVED_PERMANENTLY:301,
 
 
 
