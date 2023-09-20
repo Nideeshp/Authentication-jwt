@@ -27,7 +27,6 @@ exports.constants={
     BAD_GATEWAY:502,
     MULTI_STATUS:207,
     FOUND:302,
-    PROCESSING:102,
 
 
 
