@@ -20,7 +20,6 @@ exports.constants={
     GONE:410,
     LENGTH_REQUIRED:411,
     LOCKED:423,
-    NOT_EXTENDED:510,
     GATEWAY_TIMEOUT:504 ,
 
 
