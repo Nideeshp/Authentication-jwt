@@ -23,7 +23,6 @@ exports.constants={
     TOO_EARLY:425,
     NOT_EXTENDED:510,
     GATEWAY_TIMEOUT:504 ,
-    BAD_GATEWAY:502,
 
 
 
