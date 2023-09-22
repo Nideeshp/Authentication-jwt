@@ -12,7 +12,6 @@ exports.constants={
     UNUSED:306,
     REQUEST_TIMEOUT:408,
     CONFLICT:409,
-    TEMPORARY_REDIRECT:307,
     LENGTH_REQUIRED:411,
     
 
