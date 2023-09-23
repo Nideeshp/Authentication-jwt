@@ -12,6 +12,9 @@ exports.constants={
     REQUEST_TIMEOUT:408,
     CONFLICT:409,
     LENGTH_REQUIRED:411,
+    PAYMENT_REQUIRED:402,
+    
+
     
 
 
