@@ -15,8 +15,6 @@ exports.constants={
     PAYMENT_REQUIRED:402,
     METHOD_NOT_ALLOWED:405,
     NOT_ACCEPTABLE:406,
-    URL_TOO_LONG:414,
-    LOCKED:423,
 
 
 
