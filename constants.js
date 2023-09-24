@@ -13,7 +13,6 @@ exports.constants={
     CONFLICT:409,
     LENGTH_REQUIRED:411,
     PAYMENT_REQUIRED:402,
-    METHOD_NOT_ALLOWED:405,
 
 
 
