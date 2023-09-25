@@ -13,7 +13,9 @@ exports.constants={
     LENGTH_REQUIRED:411,
     CONTINUE:100,
     PROCESSING:102,
+    ACCEPTED:202,
     
+
 
 
 
