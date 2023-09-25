@@ -12,7 +12,9 @@ exports.constants={
     CONFLICT:409,
     LENGTH_REQUIRED:411,
     CONTINUE:100,
+    PROCESSING:102,
     
+
 
 
 
