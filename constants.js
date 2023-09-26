@@ -3,7 +3,6 @@ exports.constants={
     UNAUTHORIZED:401,
     FORBIDDEN:403,
     NOT_FOUND:404,
-    SERVER_ERROR:500,
     RESET_CONTENT:205,
     ALREADY_REPORTED:208,
     NOT_MODIFIED:304,
@@ -14,7 +13,7 @@ exports.constants={
     PROCESSING:102,
     ACCEPTED:202,
     NO_CONTENT:204,
-    
+
     
 
 
