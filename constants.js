@@ -13,7 +13,6 @@ exports.constants={
     ACCEPTED:202,
     NO_CONTENT:204,
     SERVER_ERROR:500,
-    IM_USED:226,
     FOUND:302,
     GONE:410,
 
