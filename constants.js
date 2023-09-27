@@ -16,6 +16,8 @@ exports.constants={
     SERVER_ERROR:500,
     IM_USED:226,
     FOUND:302,
+    SEE_OTHER:303,
+    
 
 
     
