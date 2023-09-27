@@ -17,7 +17,8 @@ exports.constants={
     IM_USED:226,
     FOUND:302,
     SEE_OTHER:303,
-    
+    GONE:410,
+
 
 
     
