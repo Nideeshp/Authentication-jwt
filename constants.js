@@ -13,7 +13,9 @@ exports.constants={
     PROCESSING:102,
     ACCEPTED:202,
     NO_CONTENT:204,
-    SERVER_ERROR:500
+    SERVER_ERROR:500,
+    IM_USED:226,
+    
 
     
 
