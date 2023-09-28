@@ -13,6 +13,8 @@ exports.constants={
     NO_CONTENT:204,
     SERVER_ERROR:500,
     FOUND:302,
+    I_M_A_TEAPOT:418,
+    
 
 
 
