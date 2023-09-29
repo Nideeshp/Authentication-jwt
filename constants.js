@@ -11,7 +11,6 @@ exports.constants={
     ACCEPTED:202,
     NO_CONTENT:204,
     SERVER_ERROR:500,
-    LOCKED:423,
 
 
 
