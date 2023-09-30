@@ -12,6 +12,7 @@ exports.constants={
     NO_CONTENT:204,
     SERVER_ERROR:500,
     CREATED:201,
+    RESET_CONTENT:205
 
 
 
