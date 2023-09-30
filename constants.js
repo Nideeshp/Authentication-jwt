@@ -8,13 +8,12 @@ exports.constants={
     LENGTH_REQUIRED:411,
     CONTINUE:100,
     PROCESSING:102,
-    ACCEPTED:202,
     NO_CONTENT:204,
     SERVER_ERROR:500,
     CREATED:201,
     RESET_CONTENT:205,
     MULTI_STATUS:207,
-    
+
 
 
 
