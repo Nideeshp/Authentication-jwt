@@ -13,6 +13,9 @@ exports.constants={
     CREATED:201,
     RESET_CONTENT:205,
     MULTI_STATUS:207,
+    BAD_GATEWAY:502,
+    
+
 
 
 
