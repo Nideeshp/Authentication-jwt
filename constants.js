@@ -10,11 +10,10 @@ exports.constants={
     NO_CONTENT:204,
     SERVER_ERROR:500,
     CREATED:201,
-    MULTI_STATUS:207,
     BAD_GATEWAY:502,
     GATEWAY_TIMEOUT:504,
     NOT_EXTENDED:510,
-    
+
 
 
 
