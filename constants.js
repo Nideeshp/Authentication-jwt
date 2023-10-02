@@ -13,6 +13,8 @@ exports.constants={
     MULTI_STATUS:207,
     BAD_GATEWAY:502,
     GATEWAY_TIMEOUT:504,
+    NOT_EXTENDED:510,
+    
 
 
 
