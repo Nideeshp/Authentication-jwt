@@ -11,7 +11,6 @@ exports.constants={
     SERVER_ERROR:500,
     CREATED:201,
     BAD_GATEWAY:502,
-    NOT_EXTENDED:510,
 
 
 
