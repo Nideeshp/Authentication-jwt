@@ -9,7 +9,6 @@ exports.constants={
     CONTINUE:100,
     NO_CONTENT:204,
     SERVER_ERROR:500,
-    CREATED:201,
     BAD_GATEWAY:502,
 
 
