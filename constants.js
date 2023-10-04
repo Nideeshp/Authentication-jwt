@@ -4,7 +4,6 @@ exports.constants={
     FORBIDDEN:403,
     NOT_FOUND:404,
     REQUEST_TIMEOUT:408,
-    CONFLICT:409,
     LENGTH_REQUIRED:411,
     CONTINUE:100,
     NO_CONTENT:204,
@@ -12,7 +11,7 @@ exports.constants={
     BAD_GATEWAY:502,
     FOUND:302,
     SEE_OTHER:303,
-    
+
 
 
 
