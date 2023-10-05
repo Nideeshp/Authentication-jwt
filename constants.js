@@ -10,7 +10,7 @@ exports.constants={
     SERVER_ERROR:500,
     BAD_GATEWAY:502,
     FOUND:302,
-    SEE_OTHER:303,
+    
 
 
 
