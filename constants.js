@@ -13,7 +13,6 @@ exports.constants={
     GONE:410,
     IM_NOT_A_TEAPOT:418,
     LOCKED:423,
-    TOO_EARLY:425
 
     
 
