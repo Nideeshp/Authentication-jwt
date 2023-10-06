@@ -11,7 +11,6 @@ exports.constants={
     FOUND:302,
     NOT_ACCEPTABLE:406,
     GONE:410,
-    IM_NOT_A_TEAPOT:418,
 
     
 
