@@ -10,6 +10,8 @@ exports.constants={
     BAD_GATEWAY:502,
     FOUND:302,
     NOT_ACCEPTABLE:406,
+    LOCKED:423,
+    
 
     
 
