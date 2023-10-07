@@ -14,7 +14,8 @@ exports.constants={
     GONE:410,
     CONFLICT:409,
     TOO_EARLY:425,
-    GATEWAY_TIMEOUT:504
+    GATEWAY_TIMEOUT:504,
+    SEE_OTHER:303,
 
 
 
