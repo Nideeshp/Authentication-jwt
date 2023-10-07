@@ -12,7 +12,9 @@ exports.constants={
     NOT_ACCEPTABLE:406,
     LOCKED:423,
     GONE:410,
+    CONFLICT:409,
     
+
 
     
 
