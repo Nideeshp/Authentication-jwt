@@ -13,7 +13,6 @@ exports.constants={
     LOCKED:423,
     GONE:410,
     CONFLICT:409,
-    TOO_EARLY:425,
 
 
 
