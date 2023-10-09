@@ -10,7 +10,6 @@ exports.constants={
     FOUND:302,
     NOT_ACCEPTABLE:406,
     LOCKED:423,
-    GONE:410,
 
 
 
