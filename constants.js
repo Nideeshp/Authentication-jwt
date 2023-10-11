@@ -6,7 +6,6 @@ exports.constants={
     REQUEST_TIMEOUT:408,
     LENGTH_REQUIRED:411,
     SERVER_ERROR:500,
-    BAD_GATEWAY:502,
 
 
 
