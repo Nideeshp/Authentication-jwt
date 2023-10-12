@@ -7,7 +7,9 @@ exports.constants={
     LENGTH_REQUIRED:411,
     SERVER_ERROR:500,
     SUCCESS:200,
+    CREATED:201,
     
+
 
 
 
