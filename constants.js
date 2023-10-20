@@ -4,7 +4,6 @@ exports.constants={
     FORBIDDEN:403,
     NOT_FOUND:404,
     REQUEST_TIMEOUT:408,
-    LENGTH_REQUIRED:411,
     SERVER_ERROR:500,
     
 
