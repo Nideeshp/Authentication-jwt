@@ -8,7 +8,8 @@ exports.constants={
     CONTINUE:100,
     PROCESSING:102,
     ACCEPTED:202,
-    
+    NO_CONTENT:204,
+
 
     
 
