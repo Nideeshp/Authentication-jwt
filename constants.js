@@ -5,7 +5,6 @@ exports.constants={
     NOT_FOUND:404,
     REQUEST_TIMEOUT:408,
     SERVER_ERROR:500,
-    CONTINUE:100,
  
 
     
