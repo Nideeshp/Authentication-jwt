@@ -6,7 +6,6 @@ exports.constants={
     REQUEST_TIMEOUT:408,
     SERVER_ERROR:500,
     CONTINUE:100,
-    PROCESSING:102,
  
 
     
