@@ -9,6 +9,8 @@ exports.constants={
     NO_CONTENT:204,
     SEE_OTHER:303,
     UNUSED:306,
+    CONFLICT:409,
+    
  
 
     
