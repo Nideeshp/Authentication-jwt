@@ -8,6 +8,7 @@ exports.constants={
     PROCESSING:102,
     NO_CONTENT:204,
     SEE_OTHER:303,
+    UNUSED:306,
  
 
     
