@@ -10,7 +10,6 @@ exports.constants={
     SEE_OTHER:303,
     UNUSED:306,
     CONFLICT:409,
-    GONE:410,
     
 
  
