@@ -10,7 +10,9 @@ exports.constants={
     MULTI_STATUS:202,
     SEE_OTHER:303,
     GONE:410,
+    CONFLICT:409,
     
+
 
  
 
