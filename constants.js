@@ -9,7 +9,6 @@ exports.constants={
     NO_CONTENT:204,
     MULTI_STATUS:202,
     SEE_OTHER:303,
-    GONE:410,
     
 
 
