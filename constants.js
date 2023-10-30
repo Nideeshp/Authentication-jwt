@@ -9,7 +9,9 @@ exports.constants={
     NO_CONTENT:204,
     LOCKED:423,
     PRECONDITION_FAILED:412,
+    UNPROCESSABLE_ENTITY:422,
     
+
 
     
 
