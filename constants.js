@@ -8,7 +8,6 @@ exports.constants={
     PROCESSING:102,
     NO_CONTENT:204,
     LOCKED:423,
-    PRECONDITION_FAILED:412,
 
 
 
