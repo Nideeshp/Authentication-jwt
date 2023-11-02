@@ -7,6 +7,8 @@ exports.constants={
     SERVER_ERROR:500,
     PROCESSING:102,
     NO_CONTENT:204,
+    OK:200,
+    
     
 
 
