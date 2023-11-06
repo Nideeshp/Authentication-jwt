@@ -9,7 +9,9 @@ exports.constants={
     OK:200,
     CREATED:201,
     LOCKED:423,
+    CONFLICT:409,
     
+
 
 
 
