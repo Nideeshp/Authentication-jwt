@@ -6,6 +6,5 @@ exports.constants={
     INTERNAL_SERVER_ERROR:500,
     SERVER_ERROR:500,
     NO_CONTENT:204,
-    OK:200,
 
 }
