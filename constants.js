@@ -7,6 +7,9 @@ exports.constants={
     SERVER_ERROR:500,
     BAD_GATEWAY:502,
     GATEWAY_TIMEOUT:504,
+    LOCKED:423,
+    
+
     
 
 
