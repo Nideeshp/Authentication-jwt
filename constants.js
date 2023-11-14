@@ -15,6 +15,9 @@ exports.constants={
     FAILED_DEPENDENCY:424,
     UPGRADE_REQUIRED:426,
     PERSISTENT_HEADERS_REQUIRED:428,
+    TEAPOT:418,
     
+
+
 
 }
