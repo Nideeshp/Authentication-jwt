@@ -13,6 +13,6 @@ exports.constants={
     TOO_MANY_REQUESTS:429,
     LOCKED:423,
     FAILED_DEPENDENCY:424,
+    UPGRADE_REQUIRED:426,
     
-
 }
