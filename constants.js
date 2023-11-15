@@ -18,12 +18,4 @@ exports.constants={
     TEAPOT:418,
     MISDIRECTED_REQUEST:421,
     EXPIRED_TOKEN:401,
-    WRONG_AUTH_TYPE:401,
-    
-
-
-
-
-
-
 }
