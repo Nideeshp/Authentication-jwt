@@ -12,4 +12,7 @@ exports.constants={
     UNPROCESSABLE_ENTITY:422,
     UPGRADE_REQUIRED:426,
     EXPIRED_TOKEN:401,
+    TOO_MANY_REQUESTS:429,
+    
+    
 }
