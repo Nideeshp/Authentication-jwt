@@ -13,12 +13,7 @@ exports.constants={
     VERSIONING_NOT_SUPPORTED:505,
     PRECONDITION_FAILED:412,
     PAYLOAD_TOO_LARGE:413,
+    URI_TOO_LONG:414,
     
 
-
-
-
-
-
-    
 }
