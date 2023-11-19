@@ -13,7 +13,6 @@ exports.constants={
     PRECONDITION_FAILED:412,
     PAYLOAD_TOO_LARGE:413,
     URI_TOO_LONG:414,
-    METHOD_NOT_ALLOWED:405,
 
 
 
