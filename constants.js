@@ -10,7 +10,6 @@ exports.constants={
     GATEWAY_TIMEOUT:504,
     UPGRADE_REQUIRED:426,
     TOO_MANY_REQUESTS:429,
-    PERMISSION_DENIED:403,
     
     
     
