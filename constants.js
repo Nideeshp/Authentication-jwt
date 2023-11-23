@@ -14,7 +14,9 @@ exports.constants={
     PROXY_AUTHENTICATION_REQUIRED:407,
     REQUEST_TIMEOUT:408,
     CONFLICT:409,
+    GONE:410,
     
+
 
 
 
