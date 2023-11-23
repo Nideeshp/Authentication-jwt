@@ -11,8 +11,7 @@ exports.constants={
     UPGRADE_REQUIRED:426,
     TOO_MANY_REQUESTS:429,
     METHOD_NOT_ALLOWED:405,
-    
-    
+    NOT_ACCEPTABLE:406,
     
     
 
