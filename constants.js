@@ -14,6 +14,8 @@ exports.constants={
     REQUEST_TIMEOUT:408,
     CONFLICT:409,
     GONE:410,
+    LOCKED:423,
+    
 
 
 
