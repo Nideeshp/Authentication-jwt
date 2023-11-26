@@ -10,8 +10,5 @@ exports.constants={
     GATEWAY_TIMEOUT:504,
     NOT_ACCEPTABLE:406,
     REQUEST_TIMEOUT:408,
-    
-
-
-
+    CONFLICT:409,
 }
