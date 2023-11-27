@@ -11,5 +11,4 @@ exports.constants={
     NOT_ACCEPTABLE:406,
     REQUEST_TIMEOUT:408,
     CONFLICT:409,
-    LOCKED:423,
 }
