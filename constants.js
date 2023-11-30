@@ -10,6 +10,8 @@ exports.constants={
     GATEWAY_TIMEOUT:504,
     PRECONDITION_FAILED:412,
     UNPROCESSABLE_ENTITY:422,
+    TOO_MANY_REQUESTS:429,
+    
 
     
     
