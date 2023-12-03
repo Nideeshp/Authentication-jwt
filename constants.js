@@ -9,7 +9,6 @@ exports.constants={
     SERVICE_UNAVAILABLE:503,
     GATEWAY_TIMEOUT:504,
     PRECONDITION_FAILED:412,    
-    TOO_MANY_REQUESTS:429,
     
 
 }
