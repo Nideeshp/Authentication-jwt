@@ -12,7 +12,7 @@ exports.constants={
     VARIANT_ALSO_NEGOTIATES:506,
     INSUFFICIENT_STORAGE:507,
     LOOP_DETECTED:508,
-    NOT_EXTENDED:510,
+    
     
 
 
