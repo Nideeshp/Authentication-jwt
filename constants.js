@@ -8,6 +8,10 @@ exports.constants={
     BAD_GATEWAY:502,
     SERVICE_UNAVAILABLE:503,
     GATEWAY_TIMEOUT:504,
+    LOCKED:423,
+    PRECONDITION_FAILED:412,
+    
+
     
 
 
