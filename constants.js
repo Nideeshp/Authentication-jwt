@@ -11,7 +11,6 @@ exports.constants={
     LOCKED:423,
     PRECONDITION_FAILED:412,
     UPGRADE_REQUIRED:426,
-    VARIANT_ALSO_NEGOTIATES:506,
     
 
 
