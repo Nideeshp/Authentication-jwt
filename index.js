@@ -13,11 +13,5 @@ app.use('/api/contacts',require('./routes/contactsroutes'))
 app.use('/api/users',require('./routes/usersroutes'))
 app.use(errorhandler)
 
-
-
-
-
-
-    
 app.listen(port,()=>console.log(`Server is running port ${port}`))
 
