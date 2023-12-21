@@ -2,12 +2,22 @@ version: '3'
 
 services:
   mongo_db:
-   container_name: database_container
-   image: mongo:latest
-   restart: always
-   volumes:
-   - mongo_db: /data/db
+    container_name: database_container
+    image: mongo:latest
+    restart: always
+    volumes:
+      - mongo_db:/data/db
 
-   app:
+  app:
     build: .
-    ports: 
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_URL=mongodb+srv://nideeshnd313:I623fg1SMu6zVlDV@cluster0.nd6dafr.mongodb.net/test
+      - PORT=3000
+      - PASSWORD=I623fg1SMu6zVlDV
+      - ACCESS_TOKEN_SECRET=nideesh313
+     
+
+volumes:
+  mongo_db: {}
