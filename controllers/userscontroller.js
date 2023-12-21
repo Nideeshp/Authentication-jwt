@@ -4,31 +4,42 @@ const bcrypt= require('bcrypt')
 const jwt= require('jsonwebtoken')
 
 module.exports={
-    registeruser:asyncHandler(async (req,res)=>{
-        const {name,email,password}= req.body
-        if(!name || !email || !password){
-            res.status(400)
-            throw new Error("something is missing")
-        }
-        const userAvailable= await User.findOne({email})
-        if(userAvailable){
-            res.status(400)
-            throw new Error("User already registered")
-        }
-        const hashedPassword= await bcrypt.hash(password,10)
-        console.log(hashedPassword);
+    registeruser: async (req, res) => {
+        try {
+          const { name, email, password } = req.body;
+          console.log(req.body);
 
-        const user = await User.create({
-            name,   
+      
+          if (!name || !email || !password) {
+            res.status(400);
+            throw new Error("Something is missing");
+          }
+      
+          const userAvailable = await User.findOne({ email });
+      
+          if (userAvailable) {
+            res.status(400);
+            throw new Error("User already registered");
+          }
+      
+          const hashedPassword = await bcrypt.hash(password, 10);
+          console.log(hashedPassword);
+      
+          const user = await User.create({
+            name,
             email,
-            password:hashedPassword
-        })
-
-        console.log("user is this ",user);
-
-        res.json({message:"registration succesfully"})
-    }),
-
+            password: hashedPassword,
+          });
+      
+          console.log("User is this ", user);
+      
+          res.json({ message: "Registration successful" });
+        } catch (error) {
+          console.error("Error in registeruser:", error);
+          res.status(error.status || 500).json({ error: error.message || "Internal Server Error" });
+        }
+      },
+      
 
     loginuser:asyncHandler(async (req,res)=>{
 
