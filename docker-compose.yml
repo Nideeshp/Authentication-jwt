@@ -12,12 +12,9 @@ services:
     build: .
     ports:
       - "3000:3000"
-    environment:
-      - MONGO_URL=mongodb+srv://nideeshnd313:I623fg1SMu6zVlDV@cluster0.nd6dafr.mongodb.net/test
-      - PORT=3000
-      - PASSWORD=I623fg1SMu6zVlDV
-      - ACCESS_TOKEN_SECRET=nideesh313
-     
+    env_file:
+      - .env
 
+     
 volumes:
   mongo_db: {}
