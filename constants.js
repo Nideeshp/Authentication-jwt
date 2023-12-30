@@ -10,7 +10,4 @@ exports.constants={
     GATEWAY_TIMEOUT:504,
     LOCKED:423, 
     PRECONDITION_FAILED:412,
-
-
-
 }
