@@ -7,6 +7,7 @@ const port=process.env.PORT
 const morgan = require('morgan')
 const createError= require('http-errors')
 app.use(express.json())
+app.use(express.urlencoded({extended:true}))
 const authroute = require('./routes/auth.Route')
 
 
