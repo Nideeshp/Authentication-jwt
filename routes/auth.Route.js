@@ -1,12 +1,16 @@
-const express = require('express')
-const authcontroller= require('../controllers/auth.controller.js')
-const router = express.Router()
+const express = require("express");
+const authcontroller = require("../controllers/auth.controller.js");
+const router = express.Router();
+const { verifyToken } = require("../middleware/verifyToken.js");
 
-router.post('/register',authcontroller.register)
-router.post('/login',authcontroller.login)
-router.post('/refreshToken',authcontroller.refreshToken)
-router.delete('/logout',authcontroller.logout)
+router.post("/register", authcontroller.register);
 
+router.post("/login", authcontroller.login);
 
+router.get("/home", verifyToken, authcontroller.home);
 
-module.exports = router
+router.post("/refreshToken", authcontroller.refreshToken);
+
+router.delete("/logout", verifyToken, authcontroller.logout);
+
+module.exports = router;

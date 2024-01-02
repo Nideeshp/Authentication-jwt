@@ -67,7 +67,7 @@ const login = async (req, res) => {
 
         const accessToken = await signAccessToken(userData.is)
 
-        return res.status(200).json({message:"User Created Successfully", accessToken})
+        return res.status(200).json({message:"User logged Successfully", accessToken})
 
     } catch (error) {
         console.error(error.message)
@@ -84,9 +84,14 @@ const logout = async (req, res, next) => {
   res.send("logout route");
 };
 
+const home = async (req,res)=>{
+  return res.status(200).json({message:"Access the home"})
+}
+
 module.exports = {
   register,
   login,
   refreshToken,
   logout,
+  home
 };
