@@ -1,11 +1,11 @@
 const jwt = require("jsonwebtoken");
 
-const signAccessToken = (userId) => {
+const signRefreshToken = (userId) => {
   return new Promise((resolve, reject) => {
     const payload = {};
-    const secret = process.env.ACCESS_TOKEN_SECRET;
+    const secret = process.env.REFRESH_TOKEN_SECRET;
     const options = {
-      expiresIn: "1h",
+      expiresIn: "1y",
       issuer: "nideesh",
       audience: String(userId)
     };
@@ -20,5 +20,5 @@ const signAccessToken = (userId) => {
 };
 
 module.exports = {
-  signAccessToken,
+    signRefreshToken,
 };

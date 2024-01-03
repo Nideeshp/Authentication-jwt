@@ -1,21 +1,9 @@
-GET http://localhost:3000
+###refreshToken
 
+POST http://localhost:3000/refreshtoken
 
+Content-Type: application/json
 
-###register
-
-POST http://localhost:3000/register
-
-
-###register
-
-POST http://localhost:3000/login
-
-###register
-
-
-POST http://localhost:3000/refreshToken
-
-###register
-
-DELETE http://localhost:3000/logout
+{
+    "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MDQxOTMwNTYsImV4cCI6MTczNTc1MDY1NiwiYXVkIjoiNjU5M2JjZDk1ZWQ0MDE5ZDFiNTZkNTZkIiwiaXNzIjoibmlkZWVzaCJ9.DCeb_1dKFjmOrktkRF99_MKQrfWUk6LB3p6d2o4KMQY"
+}
