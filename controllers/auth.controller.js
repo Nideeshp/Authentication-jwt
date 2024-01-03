@@ -1,15 +1,9 @@
-const userModel = require("../models/usermodel");
-const bcrypt = require("bcrypt");
-const joiUser = require("../joiModels/joiUser");
-const { signAccessToken } = require("../middleware/accessToken");
-const { signRefreshToken } = require("../middleware/refreshToken");
-const { verifyRefreshToken } = require("../middleware/verifyRefreshToken");
-
-const register = async (req, res, next) => {
+import userModel from "../models/usermodel.js";
+import { generateToken } from "../utils/generateToken.js";
+import bcrypt from "bcrypt";
+export const register = async (req, res) => {
   try {
-    const result = await joiUser.validateAsync(req.body);
-
-    const { name, email, password } = result;
+    const { name, email, password } = req.body;
 
     if (!name || !email || !password) {
       return res.status(400).json({ message: "All fields are required" });
@@ -17,102 +11,78 @@ const register = async (req, res, next) => {
 
     const existingUser = await userModel.findOne({ email });
     if (existingUser) {
-      return res.status(401).json({ message: "User already existed" });
+      return res
+        .status(409)
+        .json({ message: "User already exists with this email" });
     }
 
-    const hashedPassword = await bcrypt.hash(password, 10);
+    const hashPassword = await bcrypt.hash(password, 10);
 
-    const user = new userModel({
+    const newUser = new userModel({ 
       name,
-      email,
-      password: hashedPassword,
-    });
+       email, 
+       password:hashPassword 
+      });
 
-    const userData = await user.save();
-    const accessToken = await signAccessToken(userData.id);
-    const refreshToken = await signRefreshToken(userData.id);
+    await newUser.save();
+
+    // Generate token after successfully saving the new user
+    generateToken(res, newUser._id);
 
     return res.status(201).json({
-      message: "User Created Successfully",
-      userData,
-      accessToken,
-      refreshToken,
+      message: "User registered successfully",
+      user: newUser,
     });
   } catch (error) {
-    if (error.isJoi === true) error.status = 422;
     console.error(error.message);
     return res.status(500).json({ message: "Internal Server Error" });
   }
 };
 
-const login = async (req, res) => {
+export const login = async (req, res) => {
   try {
-    const body = await joiUser.validateAsync(req.body);
+    const { email, password } = req.body;
 
-    const { email, password } = body;
-    if (!email || !password) {
-      return res.status(400).json({ message: "Email or Password Required" });
+    const user = await userModel.findOne({ email });
+
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
     }
 
-    const userData = await userModel.findOne({ email });
-
-    if (!userData) {
-      return res.status(404).json({ message: "User Not Found" });
-    }
-
-    const isPasswordValid = await bcrypt.compare(password, userData.password);
+    const isPasswordValid = await bcrypt.compare(password, user.password);
 
     if (!isPasswordValid) {
-      return res.status(401).json({ message: "Invalid Email or Password" });
+      return res.status(401).json({ message: "Invalid credentials" });
     }
 
-    const accessToken = await signAccessToken(userData.id);
-    const refreshToken = await signRefreshToken(userData.id);
+    generateToken(res, user._id);
 
-    return res
-      .status(200)
-      .json({ message: "User logged Successfully", accessToken, refreshToken });
+    return res.status(200).json({ message: "Login successful", user });
   } catch (error) {
     console.error(error.message);
     return res.status(500).json({ message: "Internal Server Error" });
   }
 };
 
-const refreshToken = async (req, res, next) => {
+export const logout = async (req, res) => {
   try {
-    const { refreshToken } = req.body;
-    if (!refreshToken) {
-      return res.status(403).json({ message: "Forbidden Error" });
-    }
-    const userId = await verifyRefreshToken(refreshToken);
-    const accessToken = await signAccessToken(userId);
-    const newRefreshToken = await signRefreshToken(userId);
+    res.cookie('jwt','',{
+      httpOnly:true,
+      expires:new Date(0)
+    })
+    return res.status(200).json({message:"User logged out"})
+  } catch (error) {
+    console.error(error.message);
+    return res.status(500).json({ message: "Internal Server Error" })
+    ;
+  }
+};
 
-    return res
-      .status(200)
-      .json({
-        message: "Refresh token",
-        accessToken: accessToken,
-        newRefreshToken: newRefreshToken,
-      });
+export const profile = async (req, res) => {
+  try {
+    return res.status(200).json({ mesage: "profile is working" });
   } catch (error) {
     console.error(error.message);
     return res.status(500).json({ message: "Internal Server Error" });
   }
-};
-
-const logout = async (req, res, next) => {
-  res.send("logout route");
-};
-
-const home = async (req, res) => {
-  return res.status(200).json({ message: "Access the home" });
-};
-
-module.exports = {
-  register,
-  login,
-  refreshToken,
-  logout,
-  home,
 };

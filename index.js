@@ -1,24 +1,22 @@
-const express = require("express")
-const errorhandler = require("./middleware/errorhandler")
-const connectedDB = require("./config/dbconnection")
-const app=express()
-const dotenv=require("dotenv").config()
-const port=process.env.PORT
-const morgan = require('morgan')
-const createError= require('http-errors')
-app.use(express.json())
-app.use(express.urlencoded({extended:true}))
-const authroute = require('./routes/auth.Route')
+import express from "express";
+import connectedDB from "./config/dbconnection.js";
+import dotenv from "dotenv";
+import morgan from "morgan";
+import authRoute from "./routes/auth.Route.js"
+import cookieParser from "cookie-parser";
+
+const app = express();
+dotenv.config();
+
+const port = process.env.PORT;
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser())
+
+app.use('/',authRoute)
+connectedDB();
+app.use(morgan('dev'));
 
 
-
-connectedDB()
-app.use(morgan('dev'))
-
-// app.use('/api/contacts',require('./routes/contactsroutes'))
-// app.use('/',require('./routes/usersroutes'))
-app.use('/',authroute)
-app.use(errorhandler)
-
-app.listen(port,()=>console.log(`Server is running port ${port}`))
-
+app.listen(port, () => console.log(`Server is running on port ${port}`));
